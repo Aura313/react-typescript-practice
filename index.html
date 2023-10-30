@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Ordering Tool</title>
+    <style>
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        .selected {
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="thumbnail" data-id="1" style="background-image: url('path_to_image1.jpg');"></div>
+    <div class="thumbnail" data-id="2" style="background-image: url('path_to_image2.jpg');"></div>
+    <!-- Add more thumbnails as needed -->
+
+    <button id="orderButton">Order</button>
+
+    <p>Ordered Photos: <span id="output"></span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
